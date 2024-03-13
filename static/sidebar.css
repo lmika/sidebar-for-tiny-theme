@@ -1,16 +1,24 @@
-body:has(div.sidebar) {
-    max-width: 50em;
-}
+@media (min-width: 576px) {
+    body:has(div.sidebar) {
+        max-width: 50em;
+    }
 
-div.wrapper:has(div.sidebar) {
-    display: grid;
-    grid-template-columns: 35em 15em;
-    column-gap: 60px;
+    div.wrapper:has(div.sidebar) {
+        display: grid;
+        grid-template-columns: minmax(20em,35em) 15em;
+        column-gap: 60px;
+    }
 }
 
 div.sidebar {
     font-size: 0.9em;
     line-height: 1.8;
+}
+
+@media (max-width: 576px) {
+    div.sidebar {
+        display: none;
+    }
 }
 
 div.sidebar header {
