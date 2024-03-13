@@ -11,3 +11,24 @@ div.wrapper {
 div.sidebar {
     font-size: 0.8;
 }
+
+
+
+ul.blogroll li {
+  list-style-type: none !important;
+}
+
+ul.blogroll li a {
+  text-decoration: none;
+  color: black;
+}
+
+ul.blogroll li a span {
+  color: gray;
+}
+
+@media (prefers-color-scheme: dark) {
+  ul.blogroll li a {
+    color: white;
+  }
+}
