@@ -1,7 +1,8 @@
 <div class="sidebar">
     <div class="sidebar-cell">
-        <p>Recommendations</p>
-        
+        <header>
+            <h1>Recommendations</h1>
+        </header>
         <ul class="blogroll">
             {{ range .Site.Data.blogrolls.recommendations }}
                 <li><a href="{{ .url }}">{{ .name }}: <span>{{ (urls.Parse .url).Hostname }}</span></a></li>

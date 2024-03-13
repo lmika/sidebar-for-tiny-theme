@@ -9,26 +9,27 @@ div.wrapper {
 }
 
 div.sidebar {
-    font-size: 0.8;
+    font-size: 0.8em;
 }
 
+div.sidebar header h1 {
+    color: var(--accent1);
+    font-size: 0.8em;
+}
 
+ul.blogroll {
+  padding-inline: 0;
+}
 
-ul.blogroll li {
+ul.blogroll li {  
   list-style-type: none !important;
 }
 
 ul.blogroll li a {
   text-decoration: none;
-  color: black;
+  color: var(--text);
 }
 
 ul.blogroll li a span {
-  color: gray;
-}
-
-@media (prefers-color-scheme: dark) {
-  ul.blogroll li a {
-    color: white;
-  }
+  color: var(--accent2);
 }
