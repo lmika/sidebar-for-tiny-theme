@@ -4,5 +4,10 @@ body {
 
 div.wrapper {
     display: grid;
-    grid-template-columns: auto 20em;       /* might be 15 */
+    grid-template-columns: auto 15em;
+    column-gap: 60px;
+}
+
+div.sidebar {
+    font-size: 0.8;
 }
