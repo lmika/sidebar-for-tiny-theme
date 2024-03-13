@@ -1,0 +1,8 @@
+{
+    "version": "0.1.0",
+    "title": "Sidebar for Tinytheme",
+    "description": "Adds a sidebar to blogs using the Tinytheme",
+    "includes": [
+        "/sidebar.css"
+    ]
+}
