@@ -12,9 +12,12 @@ div.sidebar {
     font-size: 0.8em;
 }
 
+div.sidebar header {
+    margin-bottom: 0;
+}
+
 div.sidebar header h1 {
     color: var(--accent1);
-    font-size: 0.8em;
 }
 
 ul.blogroll {
