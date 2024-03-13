@@ -1,5 +1,11 @@
 <div class="sidebar">
     <div class="sidebar-cell">
-        {{< blogroll >}}
+        <p>Recommendations</p>
+        
+        {{ range .Site.Data.blogrolls.recommendations }}
+            <p>{{ .name }}</p>
+        {{ else }}
+            <p>No recommendations yet.</p>
+        {{ end }}
     </div>
 </div>
