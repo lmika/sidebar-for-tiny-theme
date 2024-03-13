@@ -1,5 +1,5 @@
-body {
-    max-width: 55em;
+body:has(div.sidebar) {
+    max-width: 50em;
 }
 
 div.wrapper:has(div.sidebar) {
