@@ -1,4 +1,4 @@
-@media (min-width: 576px) {
+@media (min-width: 776px) {
     body:has(div.sidebar) {
         max-width: 50em;
     }
@@ -15,7 +15,7 @@ div.sidebar {
     line-height: 1.8;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 775px) {
     div.sidebar {
         display: none;
     }
