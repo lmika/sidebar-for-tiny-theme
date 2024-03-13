@@ -1,3 +1,8 @@
 body {
     max-width: 55em;
 }
+
+div.wrapper {
+    display: grid;
+    grid-template-columns: auto 20em;       /* might be 15 */
+}
