@@ -1,7 +1,7 @@
 {
     "version": "0.1.0",
-    "title": "Sidebar for Tinytheme",
-    "description": "Adds a sidebar to blogs using the Tinytheme",
+    "title": "Sidebar for Tiny theme",
+    "description": "Adds a sidebar to blogs using the Tiny theme",
     "includes": [
         "/sidebar.css"
     ]
