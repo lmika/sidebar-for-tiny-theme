@@ -53,11 +53,8 @@ div.blogroll-footer-links {
 }
 
 div.blogroll-footer-links a {
-  display: inline-block;
-  padding-inline: 2px;
+  inline-inline: 8px;
   box-sizing: border-box;
-  
-  border-inline-start: solid thin var(--accent2);
 }
 
 div.blogroll-footer-links a:first-of-type {
