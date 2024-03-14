@@ -49,7 +49,7 @@ ul.blogroll li a span {
 
 div.blogroll-footer-links a {
   display: inline-block;
-  padding-inline: 4px
+  padding-inline: 4px;
   border-inline-start: solid thin var(--accent2);
 }
 
