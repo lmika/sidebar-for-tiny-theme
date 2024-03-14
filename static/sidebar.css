@@ -47,12 +47,19 @@ ul.blogroll li a span {
   color: var(--accent2);
 }
 
+div.blogroll-footer-links {
+  line-height: 1.3em;
+}
+
 div.blogroll-footer-links a {
   display: inline-block;
-  padding-inline: 4px;
+  margin-inline: 2px;
+  box-sizing: border-box;
+  
   border-inline-start: solid thin var(--accent2);
 }
 
 div.blogroll-footer-links a:first-of-type {
   border-inline-start: none;
+  margin-inline-start: 0;
 }
