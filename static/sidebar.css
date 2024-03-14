@@ -53,10 +53,10 @@ div.blogroll-footer-links {
 }
 
 div.blogroll-footer-links a {
-  inline-inline: 8px;
+  margin-inline: 6px;
   box-sizing: border-box;
 }
 
 div.blogroll-footer-links a:first-of-type {
-  border-inline-start: none;
+  margin-inline-start: 0;
 }
