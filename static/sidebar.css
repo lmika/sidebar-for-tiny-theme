@@ -55,6 +55,7 @@ div.blogroll-footer-links {
 div.blogroll-footer-links a {
   margin-inline: 6px;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 div.blogroll-footer-links a:first-of-type {
