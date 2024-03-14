@@ -46,3 +46,13 @@ ul.blogroll li a {
 ul.blogroll li a span {
   color: var(--accent2);
 }
+
+div.blogroll-footer-links a {
+  display: inline-block;
+  padding-inline: 4px
+  border-inline-start: solid thin var(--accent2);
+}
+
+div.blogroll-footer-links a:first-of-type {
+  border-inline-start: none;
+}
