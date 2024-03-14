@@ -53,7 +53,7 @@ div.blogroll-footer-links {
 
 div.blogroll-footer-links a {
   display: inline-block;
-  margin-inline: 2px;
+  padding-inline: 2px;
   box-sizing: border-box;
   
   border-inline-start: solid thin var(--accent2);
@@ -61,5 +61,5 @@ div.blogroll-footer-links a {
 
 div.blogroll-footer-links a:first-of-type {
   border-inline-start: none;
-  margin-inline-start: 0;
+  padding-inline-start: 0;
 }
