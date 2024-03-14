@@ -49,6 +49,7 @@ ul.blogroll li a span {
 
 div.blogroll-footer-links {
   line-height: 1.3em;
+  display: flex;
 }
 
 div.blogroll-footer-links a {
@@ -61,5 +62,4 @@ div.blogroll-footer-links a {
 
 div.blogroll-footer-links a:first-of-type {
   border-inline-start: none;
-  padding-inline-start: 0;
 }
