@@ -12,10 +12,12 @@
 
 div.sidebar {
     font-size: 0.9em;
-    line-height: 1.3;
+    line-height: 1.5;
     
     display: flex;
     flex-direction: column;
+    
+    margin-block: 1px;
 }
 
 div.sidebar-item {
