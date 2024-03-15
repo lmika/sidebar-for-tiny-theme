@@ -81,3 +81,7 @@ div.sidebar-item div.blogroll-footer-links a {
 div.sidebar-item div.blogroll-footer-links a:first-of-type {
   margin-inline-start: 0;
 }
+
+div.sidebar-item ul.links li a {
+  text-decoration: none;
+}
