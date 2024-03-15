@@ -9,4 +9,6 @@
             <p>This is some more stuff that goes here.</p>
         </div>
     </div>
+    
+    {{ partial "sidebar-items/links.html" (dict "title" "Books" "links" (index .Site.Data.blogrolls "books-that-are-cool"))}}
 </div>

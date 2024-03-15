@@ -1,0 +1,10 @@
+<div class="sidebar-item">
+    <header>
+        <h1>{{ .title }}</h1>
+    </header>
+    <ul class="blogroll">
+        {{ range .links }}
+            <li><a href="{{ .url }}">{{ .name }}: <span>{{ (urls.Parse .url).Hostname }}</span></a></li>
+        {{ end }}
+    </ul>
+</div>
