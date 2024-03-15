@@ -20,6 +20,13 @@ div.sidebar {
     margin-block: 1px;
 }
 
+@media (max-width: 775px) {
+    div.sidebar {
+        display: none;
+    }
+}
+
+
 div.sidebar-item {
   border-block-start: solid thin var(--accent1);
   padding-block-start: 20px;
@@ -31,51 +38,46 @@ div.sidebar-item:first-of-type {
   padding-block-start: 0;
 }
 
-
-@media (max-width: 775px) {
-    div.sidebar {
-        display: none;
-    }
-}
-
-div.sidebar header {
+div.sidebar-item header {
     margin-bottom: 0;
 }
 
-div.sidebar header h1 {
+div.sidebar-item header h1 {
     font-size: 1.0em;
     color: var(--accent1);
 }
 
-ul.blogroll {
+div.sidebar-item ul.blogroll,
+div.sidebar-item ul.links {
   padding-inline: 0;
   line-height: 1.8;
 }
 
-ul.blogroll li {  
+div.sidebar-item ul.blogroll li,
+div.sidebar-item ul.links li {  
   list-style-type: none !important;
 }
 
-ul.blogroll li a {
+div.sidebar-item ul.blogroll li a {
   text-decoration: none;
   color: var(--text);
 }
 
-ul.blogroll li a span {
+div.sidebar-item ul.blogroll li a span {
   color: var(--accent2);
 }
 
-div.blogroll-footer-links {
+div.sidebar-item div.blogroll-footer-links {
   line-height: 1.3em;
   display: flex;
 }
 
-div.blogroll-footer-links a {
+div.sidebar-item div.blogroll-footer-links a {
   margin-inline: 6px;
   box-sizing: border-box;
   text-decoration: none;
 }
 
-div.blogroll-footer-links a:first-of-type {
+div.sidebar-item div.blogroll-footer-links a:first-of-type {
   margin-inline-start: 0;
 }
