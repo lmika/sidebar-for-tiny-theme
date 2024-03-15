@@ -1,18 +1,12 @@
 <div class="sidebar">
-    <div class="sidebar-cell">
+    {{ partial "sidebar-items/recommendations.html" . }}
+    
+    <div class="sidebar-item">
         <header>
-            <h1>Recommendations</h1>
+            <h1>About</h1>
         </header>
-        <ul class="blogroll">
-            {{ range .Site.Data.blogrolls.recommendations }}
-                <li><a href="{{ .url }}">{{ .name }}: <span>{{ (urls.Parse .url).Hostname }}</span></a></li>
-            {{ else }}
-                <p>No recommendations yet.</p>
-            {{ end }}
-        </ul>
-        <div class="blogroll-footer-links">
-            <a href="{{ .Site.BaseURL }}/.well-known/recommendations.opml">OPML</a>
-            <a href="{{ .Site.BaseURL }}/.well-known/recommendations.json">JSON</a>
+        <div>
+            <p>This is some more stuff that goes here.</p>
         </div>
     </div>
 </div>
