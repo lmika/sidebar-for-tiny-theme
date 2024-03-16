@@ -1,7 +1,7 @@
 <div class="sidebar">
     {{ if templates.Exists "partials/sidebar.html" }}
     {{ partial "sidebar.html" . }}
-    {{ else }}    
+    {{ else }}
     {{ partial "sidebar-for-tiny-theme/recommendations.html" . }}
     {{ end }}
 </div>
