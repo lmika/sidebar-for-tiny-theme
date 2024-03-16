@@ -1,6 +1,6 @@
 <div class="sidebar">
     {{ if templates.Exists "partials/sidebar.html" }}
-    {{ partial "microhook-after-page-content.html" . }}
+    {{ partial "sidebar.html" . }}
     {{ else }}    
     {{ partial "sidebar-for-tiny-theme/recommendations.html" . }}
     {{ end }}
