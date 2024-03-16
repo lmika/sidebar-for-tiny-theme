@@ -2,15 +2,17 @@
     <header>
         <h1>Recommendations</h1>
     </header>
-    <ul class="blogroll">
-        {{ range .Site.Data.blogrolls.recommendations }}
-            <li><a href="{{ .url }}">{{ .name }}: <span>{{ (urls.Parse .url).Hostname }}</span></a></li>
-        {{ else }}
-            <p>No recommendations yet.</p>
-        {{ end }}
-    </ul>
-    <div class="blogroll-footer-links">
-        <a href="{{ absURL ".well-known/recommendations.opml" }}">OPML</a>
-        <a href="{{ absURL ".well-known/recommendations.json" }}">JSON</a>
-    </div>
+    {{ if .Site.Data.blogrolls.recommendations }}
+        <ul class="blogroll">
+            {{ range .Site.Data.blogrolls.recommendations }}        
+                <li><a href="{{ .url }}">{{ .name }}: <span>{{ (urls.Parse .url).Hostname }}</span></a></li>
+            {{ end }}
+        </ul>
+        <div class="blogroll-footer-links">
+            <a href="{{ absURL ".well-known/recommendations.opml" }}">OPML</a>
+            <a href="{{ absURL ".well-known/recommendations.json" }}">JSON</a>
+        </div>            
+    {{ else }}
+        <p>No recommendations yet.</p>
+    {{ end }}
 </div>
