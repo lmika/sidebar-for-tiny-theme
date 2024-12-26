@@ -1,8 +1,20 @@
 {
-    "version": "1.1.1",
+    "version": "1.2.0",
     "title": "Sidebar for Tiny Theme",
     "description": "Adds a sidebar to a blog using Tiny Theme",
     "includes": [
         "/sidebar.css"
+    ],
+    "fields": [
+        {
+            "field": "params.sidebar_show_on_posts",
+            "label": "Show sidebar on posts",
+            "type": "boolean"
+        },
+        {
+            "field": "params.sidebar_show_on_pages",
+            "label": "Show sidebar on other pages",
+            "type": "boolean"
+        }
     ]
 }
