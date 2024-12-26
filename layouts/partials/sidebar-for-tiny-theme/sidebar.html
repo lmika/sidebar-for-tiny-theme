@@ -1,7 +1,7 @@
-{{ isPost := eq .Page.Type "post" -}}
-{{ showOnPosts := $.Site.Params.sidebar_show_on_posts -}}
-{{ showOnPages := $.Site.Params.sidebar_show_on_pages -}}
-{{ shouldShowSidebar := or .IsHome (and $showOnPosts $isPost) (and $showOnPages (not $isPost)) -}}
+{{ $isPost := eq .Page.Type "post" -}}
+{{ $showOnPosts := $.Site.Params.sidebar_show_on_posts -}}
+{{ $showOnPages := $.Site.Params.sidebar_show_on_pages -}}
+{{ $shouldShowSidebar := or .IsHome (and $showOnPosts $isPost) (and $showOnPages (not $isPost)) -}}
 
 PAGE TYPE = {{ .Page.Type }},
 IS POST = {{ $isPost }},
