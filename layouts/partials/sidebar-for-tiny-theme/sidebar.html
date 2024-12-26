@@ -4,22 +4,10 @@
 {{ $shouldShowSidebar := or .IsHome (and $showOnPosts $isPost) (and $showOnPages (not $isPost)) -}}
 {{ if $shouldShowSidebar -}}
 <div class="sidebar">
-    <!-- TEMP -->
-    PAGE TYPE = {{ .Page.Type }},
-    IS POST = {{ $isPost }},
-    SHOULD SHOW = {{ $shouldShowSidebar }}
-    <!-- END -->
-    
     {{ if templates.Exists "partials/sidebar.html" }}
     {{ partial "sidebar.html" . }}
     {{ else }}
     {{ partial "sidebar-for-tiny-theme/recommendations.html" . }}
     {{ end }}
 </div>
-{{ else -}}
-    <!-- TEMP -->
-    PAGE TYPE = {{ .Page.Type }},
-    IS POST = {{ $isPost }},
-    SHOULD SHOW = {{ $shouldShowSidebar }}
-    <!-- END -->
 {{ end -}}
